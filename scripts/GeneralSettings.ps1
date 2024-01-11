@@ -21,6 +21,7 @@ If (!([System.Windows.Forms.Control]::IsKeyLocked('NumLock'))) {
 
 # General: Permanently Delete Edge Shortcut From Desktop
 Write-Host "Removing Edge browser shortcut from desktop..."
+#Error: Doesn't work
 If (!(Test-Path "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate")) {
 	New-Item -Path "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate" | Out-Null
 }
@@ -39,6 +40,7 @@ Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CDP" -Name "RomeSdkChannelUserAuthzPolicy" -Type DWord -Value 0
 
 # General: Show Task Manager Details
+#Error: This just hangs; there's a sleep timer but I'm impatient
 If (!(Test-Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\TaskManager")) {
 	New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\TaskManager" -Force | Out-Null
 }
