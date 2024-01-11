@@ -20,6 +20,7 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\W
 Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
 
 # Security: Restrict Windows P2P downloads to local network
+#Error: I had to create the HKLM...DeliveryOptimization/Config key manually
 If (!(Test-Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config")) {
 	New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" | Out-Null
 }
