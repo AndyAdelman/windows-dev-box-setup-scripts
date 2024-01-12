@@ -1,4 +1,8 @@
 
+# !!! - This is all jacked up.
+# It only hides things in This PC but there's still a bunch of other crap on the side bar where it's not hidden
+
+
 #Example Provided:
 
 #--- Configuring Windows properties ---
