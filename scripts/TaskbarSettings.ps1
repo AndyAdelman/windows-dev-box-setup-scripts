@@ -9,6 +9,9 @@ Write-Host "Configuring Taskbar..." -ForegroundColor "Yellow"
 # Error: Command not found
 Set-BoxstarterTaskbarOptions -Size Small -Dock Bottom -Combine Full -AlwaysShowIconsOn
 
+# TODO:
+# Unpin Edge and Microsoft Browser
+
 # Taskbar: Taskbar where window is open for multi-monitor
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name MMTaskbarMode -Value 2
 
