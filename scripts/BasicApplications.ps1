@@ -5,7 +5,8 @@ choco install -y notepadplusplus
 choco install -y sumatrapdf
 
 # Browsers
-choco install -y googlechrome
+# Chrome install failed ??
+#choco install -y googlechrome
 choco install -y firefox
 choco install -y tor-browser
 
@@ -54,7 +55,7 @@ choco install -y powershell-core
 # TP-Link Easy Config
 
 # --- Not Found ---
-# gitbash
+# gitbash --> this is included with git install
 # magic jellybean keyfinder
 
 
