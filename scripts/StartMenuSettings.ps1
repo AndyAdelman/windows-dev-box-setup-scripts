@@ -5,6 +5,12 @@
 
 Write-Host "Configuring Start Menu..." -ForegroundColor "Yellow"
 
+# TODO:
+# No recommendations
+# Fewer Pins
+# Unpin unwanted
+# Pin wanted
+
 # Start Menu: Disable Fast Startup
 Write-Host "Disabling Fast Startup..."
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power" -Name "HiberbootEnabled" -Type DWord -Value 0
